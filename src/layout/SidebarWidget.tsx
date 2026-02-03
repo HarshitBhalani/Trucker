@@ -21,21 +21,20 @@ export default function SidebarWidget() {
       </p>
 
       <a
-        href="https://tailadmin.com/pricing"
-        target="_blank"
-        rel="nofollow"
-        className="
-          px-6 py-2.5 rounded-lg font-medium text-white
-          bg-orange-500 hover:bg-orange-600
-          dark:bg-brand-500 dark:hover:bg-brand-600
-          focus:outline-none
-          focus:ring-2 focus:ring-orange-500/40
-          dark:focus:ring-brand-500/40
-          transition-colors
-        "
-      >
-        Upgrade To Pro
-      </a>
+  href="tel:+911234567890"
+  className="
+    px-6 py-2.5 rounded-lg font-medium text-white
+    bg-orange-500 hover:bg-orange-600
+    dark:bg-brand-500 dark:hover:bg-brand-600
+    focus:outline-none
+    focus:ring-2 focus:ring-orange-500/40
+    dark:focus:ring-brand-500/40
+    transition-colors
+  "
+>
+  +91 1234567890
+</a>
+
     </div>
   );
 }
