@@ -33,10 +33,10 @@ export default function InputStates() {
           <Input
             type="email"
             defaultValue={email}
-            error={error}
+            // error={error}
             onChange={handleEmailChange}
             placeholder="Enter your email"
-            hint={error ? "This is an invalid email address." : ""}
+            // hint={error ? "This is an invalid email address." : ""}
           />
         </div>
 
@@ -46,10 +46,10 @@ export default function InputStates() {
           <Input
             type="email"
             defaultValue={email}
-            success={!error}
+            // success={!error}
             onChange={handleEmailChange}
             placeholder="Enter your email"
-            hint={!error ? "Valid email!" : ""}
+            // hint={!error ? "Valid email!" : ""}
           />
         </div>
 
@@ -61,7 +61,7 @@ export default function InputStates() {
             defaultValue="disabled@example.com"
             disabled={true}
             placeholder="Disabled email"
-            hint="This field is disabled."
+            // hint="This field is disabled."
           />
         </div>
       </div>
