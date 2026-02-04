@@ -2,7 +2,7 @@
 
 import React from "react";
 
-export default function UserAddressCard() {
+export default function UserBank() {
   return (
     <div
       className="
@@ -12,77 +12,58 @@ export default function UserAddressCard() {
       "
     >
       <h4 className="mb-6 text-lg font-semibold text-orange-600 dark:text-orange-400">
-        Address Details
+        Bank Details
       </h4>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-        {/* Building / Apartment Number */}
+        {/* Account Holder Name */}
         <div>
           <p className="mb-1 text-xs text-gray-500 dark:text-gray-400">
-            Building / Apartment Number
+            Account Holder Name
           </p>
-          <p className="text-sm font-medium text-gray-800 dark:text-gray-100">
-            A-504, Green Heights
+          <p className="text-sm font-medium uppercase text-gray-800 dark:text-gray-100">
+            Harshit Bhalani
           </p>
         </div>
 
-        {/* Area Name */}
+        {/* Bank Name */}
         <div>
           <p className="mb-1 text-xs text-gray-500 dark:text-gray-400">
-            Area Name
+            Bank Name
           </p>
           <p className="text-sm font-medium text-gray-800 dark:text-gray-100">
-            Vastrapur
+            HDFC Bank Ltd.
+          </p>
+        </div>
+        <br />
+
+        {/* Bank Account Number */}
+        <div>
+          <p className="mb-1 text-xs text-gray-500 dark:text-gray-400">
+            Bank Account Number
+          </p>
+          <p className="text-sm font-medium text-gray-800 dark:text-gray-100">
+            123456789012
           </p>
         </div>
 
-        {/* Landmark */}
+        {/* Re-enter Bank Account Number */}
         <div>
           <p className="mb-1 text-xs text-gray-500 dark:text-gray-400">
-            Landmark
+            Re-enter Bank Account Number
           </p>
           <p className="text-sm font-medium text-gray-800 dark:text-gray-100">
-            Near Alpha Mall
+            123456789012
           </p>
         </div>
 
-        {/* City */}
+        {/* IFSC Code */}
         <div>
           <p className="mb-1 text-xs text-gray-500 dark:text-gray-400">
-            City
+            IFSC Code
           </p>
           <p className="text-sm font-medium text-gray-800 dark:text-gray-100">
-            Ahmedabad
-          </p>
-        </div>
-
-        {/* State */}
-        <div>
-          <p className="mb-1 text-xs text-gray-500 dark:text-gray-400">
-            State
-          </p>
-          <p className="text-sm font-medium text-gray-800 dark:text-gray-100">
-            Gujarat
-          </p>
-        </div>
-
-        {/* Country */}
-        <div>
-          <p className="mb-1 text-xs text-gray-500 dark:text-gray-400">
-            Country
-          </p>
-          <p className="text-sm font-medium text-gray-800 dark:text-gray-100">
-            India
-          </p>
-        </div>
-
-        {/* PIN Code */}
-        <div>
-          <p className="mb-1 text-xs text-gray-500 dark:text-gray-400">
-            PIN Code
-          </p>
-          <p className="text-sm font-medium text-gray-800 dark:text-gray-100">
-            380015
+            HDFC0001234
           </p>
         </div>
       </div>

@@ -1,9 +1,11 @@
 import UserAddressCard from "@/components/user-profile/UserAddressCard";
 import UserInfoCard from "@/components/user-profile/UserInfoCard";
 import UserMetaCard from "@/components/user-profile/UserMetaCard";
-import UserDetails from "@/components/user-profile/UserDetails";
+import UserIdentity from "@/components/user-profile/UserIdentity";
+import UserBank from "@/components/user-profile/UserBank";
 import { Metadata } from "next";
 import React from "react";
+
 
 export const metadata: Metadata = {
   title: "Profile | Dashboard",
@@ -40,7 +42,8 @@ export default function Profile() {
         <div className="space-y-6">
           <UserMetaCard />
           <UserInfoCard />
-          <UserDetails />
+          <UserIdentity />
+          <UserBank />  
           <UserAddressCard />
         </div>
       </div>

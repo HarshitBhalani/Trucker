@@ -26,10 +26,8 @@ export default function UserMetaCard() {
         <div>
           <h3 className="text-lg font-semibold text-orange-600 dark:text-orange-400">
             Harshit Bhalani
-          </h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            Website Developer · Ahmedabad, Gujarat, India
-          </p>
+          </h3>         
+            <p className="text text-gray-600 dark:text-gray-400">APMLXXXX - Website Developer</p>
         </div>
       </div>
     </div>

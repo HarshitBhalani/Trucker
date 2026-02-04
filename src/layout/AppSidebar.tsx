@@ -30,8 +30,10 @@ import {
   ListBulletIcon,
   ChatBubbleLeftRightIcon,
   WalletIcon,
+  BuildingOffice2Icon,
+  TruckIcon,
+  UserIcon,
 } from "@heroicons/react/24/outline";
-
 
 /* ===================== TYPES ===================== */
 type NavItem = {
@@ -49,11 +51,17 @@ const navItems: NavItem[] = [
   { name: "Home", icon: Squares2X2Icon, path: "/" },
   { name: "Load", icon: ClipboardDocumentListIcon, path: "/calendar" },
   { name: "Moves", icon: ListBulletIcon, path: "/form-elements" },
-  { name: "Chat", icon: ChatBubbleLeftRightIcon, path: "/app/(admin)/(others-pages)/chat/chat" },
+  {
+    name: "Chat",
+    icon: ChatBubbleLeftRightIcon,
+    path: "/app/(admin)/(others-pages)/chat/chat",
+  },
+  { name: "Branch", icon: BuildingOffice2Icon, path: "/branch" },
+  { name: "Trucker", icon: TruckIcon, path: "/trucker" },
+  { name: "Driver", icon: UserIcon, path: "/driver" },
   { name: "Wallet", icon: WalletIcon, path: "/wallet" },
-  { name: "User Profile", icon: UserCircleIcon, path: "/profile" },
+  // { name: "User Profile", icon: UserCircleIcon, path: "/profile" },
 ];
-
 
 // const othersItems: NavItem[] = [
 //   {
@@ -88,6 +96,7 @@ const navItems: NavItem[] = [
 
 /* ===================== COMPONENT ===================== */
 const AppSidebar: React.FC = () => {
+  
   const { isExpanded, isHovered, isMobileOpen, setIsHovered } = useSidebar();
   const pathname = usePathname();
 
@@ -99,7 +108,9 @@ const AppSidebar: React.FC = () => {
   } | null>(null);
 
   const subMenuRefs = useRef<Record<string, HTMLDivElement | null>>({});
-  const [subMenuHeight, setSubMenuHeight] = useState<Record<string, number>>({});
+  const [subMenuHeight, setSubMenuHeight] = useState<Record<string, number>>(
+    {},
+  );
 
   const isActive = useCallback((path: string) => path === pathname, [pathname]);
 
@@ -219,19 +230,15 @@ const AppSidebar: React.FC = () => {
       </div>
 
       {/* SCROLL */}
-      <div
-        className={`flex-1 overflow-y-auto ${
-          isCollapsed ? "no-scrollbar" : "custom-scrollbar"
-        }`}
-      >
-        <nav className="flex flex-col gap-6 px-3">
-          <div>
-            <h2 className="mb-4 text-xs uppercase text-gray-400 text-center">
-              {isCollapsed ? <HorizontaLDots /> : "Menu"}
-            </h2>
-            {renderMenuItems(navItems, "main")}
-          </div>
+   <div
+  className="
+    flex-1 overflow-hidden
+  "
+>
 
+
+        <nav className="flex flex-col gap-6 px-3">
+            {renderMenuItems(navItems, "main")}
           {/* <div>
             <h2 className="mb-4 text-xs uppercase text-gray-400 text-center">
               {isCollapsed ? <HorizontaLDots /> : "Others"}

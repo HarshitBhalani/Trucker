@@ -885,3 +885,12 @@ textarea:focus-visible {
   box-shadow: none;
   border-color: var(--color-success-500); /* GREEN BORDER */
 }
+/* Sidebar scrollbar completely hidden but scroll works */
+.sidebar-scroll-hidden {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE & Edge */
+}
+
+.sidebar-scroll-hidden::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari */
+}

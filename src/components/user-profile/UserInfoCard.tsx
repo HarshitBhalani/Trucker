@@ -12,26 +12,59 @@ export default function UserInfoCard() {
       "
     >
       <h4 className="mb-6 text-lg font-semibold text-orange-600 dark:text-orange-400">
-        Personal Information
+        Personal & Company Details
       </h4>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-        {[
-          ["First Name", "Harshit"],
-          ["Last Name", "Bhalani"],
-          ["Email Address", "harshitbhalani@example.com"],
-          ["Phone", "+1234567890"],
-          ["Bio", "Website Developer"],
-        ].map(([label, value]) => (
-          <div key={label}>
-            <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">
-              {label}
-            </p>
-            <p className="text-sm font-medium text-gray-800 dark:text-gray-100">
-              {value}
-            </p>
-          </div>
-        ))}
+        {/* Full Name */}
+        <div>
+          <p className="mb-1 text-xs text-gray-500 dark:text-gray-400">
+            Full Name
+          </p>
+          <p className="text-sm font-medium text-gray-800 dark:text-gray-100">
+            xyz pqr asd
+          </p>
+        </div>
+
+        {/* Company Name */}
+        <div>
+          <p className="mb-1 text-xs text-gray-500 dark:text-gray-400">
+            Company Name
+          </p>
+          <p className="text-sm font-medium text-gray-800 dark:text-gray-100">
+            xyz
+          </p>
+        </div>
+
+        {/* Designation */}
+        <div>
+          <p className="mb-1 text-xs text-gray-500 dark:text-gray-400">
+            Designation
+          </p>
+          <p className="text-sm font-medium text-gray-800 dark:text-gray-100">
+            Manager
+          </p>
+        </div>
+
+        {/* Mobile Number */}
+        <div>
+          <p className="mb-1 text-xs text-gray-500 dark:text-gray-400">
+            Mobile Number
+          </p>
+          <p className="text-sm font-medium text-gray-800 dark:text-gray-100">
+            +91 123456789
+          </p>
+        </div>
+
+        {/* Email ID */}
+        <div>
+          <p className="mb-1 text-xs text-gray-500 dark:text-gray-400">
+            Email ID
+          </p>
+          <p className="text-sm font-medium text-gray-800 dark:text-gray-100">
+            harshitbhalani@example.com
+          </p>
+        </div>
       </div>
     </div>
   );
