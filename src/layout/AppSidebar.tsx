@@ -49,8 +49,8 @@ type NavItem = {
 /* ===================== MENU DATA ===================== */
 const navItems: NavItem[] = [
   { name: "Home", icon: Squares2X2Icon, path: "/" },
-  { name: "Load", icon: ClipboardDocumentListIcon, path: "/calendar" },
-  { name: "Moves", icon: ListBulletIcon, path: "/form-elements" },
+  { name: "Load", icon: ClipboardDocumentListIcon, path: "/load" },
+  { name: "Moves", icon: ListBulletIcon, path: "/moves" },
   {
     name: "Chat",
     icon: ChatBubbleLeftRightIcon,
@@ -230,13 +230,7 @@ const AppSidebar: React.FC = () => {
       </div>
 
       {/* SCROLL */}
-   <div
-  className="
-    flex-1 overflow-hidden
-  "
->
-
-
+   <div className="flex-1 overflow-hidden">
         <nav className="flex flex-col gap-6 px-3">
             {renderMenuItems(navItems, "main")}
           {/* <div>

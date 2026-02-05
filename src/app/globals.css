@@ -892,5 +892,32 @@ textarea:focus-visible {
 }
 
 .sidebar-scroll-hidden::-webkit-scrollbar {
-  display: none;                /* Chrome, Safari */
+  display: none       Chrome, Safari
+}
+/* ===== Modal Scrollbar ===== */
+.modal-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent; /* light mode */
+}
+
+.modal-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-scroll::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 9999px;
+}
+
+/* Dark mode */
+.dark .modal-scroll {
+  scrollbar-color: #94a3b8 transparent;
+}
+
+.dark .modal-scroll::-webkit-scrollbar-thumb {
+  background-color: #94a3b8;
 }
