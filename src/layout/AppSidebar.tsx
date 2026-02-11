@@ -57,7 +57,7 @@ const navItems: NavItem[] = [
     path: "/app/(admin)/(others-pages)/chat/chat",
   },
   { name: "Branch", icon: BuildingOffice2Icon, path: "/branch" },
-  { name: "Trucker", icon: TruckIcon, path: "/trucker" },
+  { name: "Trucker", icon: TruckIcon, path: "/truck" },
   { name: "Driver", icon: UserIcon, path: "/driver" },
   { name: "Wallet", icon: WalletIcon, path: "/wallet" },
   // { name: "User Profile", icon: UserCircleIcon, path: "/profile" },

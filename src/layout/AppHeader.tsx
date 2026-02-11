@@ -28,7 +28,7 @@ const AppHeader: React.FC = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-99999 w-full border-b border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900">
+    <header className="sticky top-0 z-40 w-full border-b border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900">
       <div className="flex items-center gap-3 px-3 py-3 lg:px-6 lg:py-4">
         {/* HAMBURGER — EXACT SVG */}
         <button
